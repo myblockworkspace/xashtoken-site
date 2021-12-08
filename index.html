@@ -230,7 +230,22 @@
 									<div class="number">03</div>
 									<h2 class="title"><span>Swap BNB / WBNB to XASH Token</h2>
 									<p>To trade XASH Token with BNB/WBNB make sure to import XASH by Copying and Pasting the official Contract Address as shown below to trade XASH Token</p>
-									<p>Contract Address:<br>0xa160661618b84ea3e6a1c40c0b387231cb9bbfcc</p>
+									<input type="text" value="0xa160661618b84ea3e6a1c40c0b387231cb9bbfcc" id="myInput">
+									<button class="btn btn-default" onclick="myFunction()">Copy Address</button>
+									<script>
+										function myFunction() {
+										  /* Get the text field */
+										  var copyText = document.getElementById("myInput");
+										
+										  /* Select the text field */
+										  copyText.select();
+										  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+										
+										  /* Copy the text inside the text field */
+										  navigator.clipboard.writeText(copyText.value);
+										  
+										}
+										</script>
 								</div> <!-- /.text -->
 							</div> <!-- /.col- -->
 							<div class="col-lg-6 img-box"><div><img src="images/shape/9.png" alt=""></div></div>
